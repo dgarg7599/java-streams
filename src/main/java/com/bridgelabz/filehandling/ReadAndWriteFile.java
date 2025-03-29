@@ -3,6 +3,7 @@ package com.bridgelabz.filehandling;
 import java.io.*;
 
 public class ReadAndWriteFile {
+
     public static void main(String[] args) {
         // Define source and destination file paths
         String sourceFile = "D:\\bridgelabz-workspace\\java-streams\\src\\main\\java\\com\\bridgelabz\\filehandling\\source.txt";
