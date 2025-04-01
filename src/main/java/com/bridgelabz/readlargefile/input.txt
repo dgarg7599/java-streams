@@ -1,0 +1,50 @@
+Java I/O Streams
+Java provides a rich set of I/O (Input/Output) classes to read and write data. These classes are part of the java.io package and are based on the concept of streams. A stream represents a sequence of data and can be used for reading from or writing to a data source or destination.
+Types of Streams
+In Java, streams are divided into two main categories:
+Byte Streams: Work with binary data (8-bit bytes)
+Character Streams: Work with character data (16-bit Unicode characters)
+Let's explore various types of streams in detail:
+
+
+1. File Streams
+Handle reading/writing data directly to/from files.
+Byte Streams:
+FileInputStream: Reads bytes from a file.
+FileOutputStream: Writes bytes to a file.
+Use Case: Binary files (e.g., images, PDFs).
+
+
+2. Object Streams
+Serialize/deserialize Java objects (convert objects to bytes and vice versa).
+ObjectInputStream: Reads serialized objects.
+ObjectOutputStream: Writes serialized objects.
+Requirements: Objects must implement a Serializable interface.
+
+ObjectInputStream and ObjectOutputStream
+These streams are used for serialization and deserialization of objects.
+
+
+3. ByteArray Streams
+Use byte arrays as the source/destination in memory.
+ByteArrayInputStream: Reads from a byte array.
+ByteArrayOutputStream: Writes to a byte array.
+Use Case: In-memory data manipulation (e.g., network protocols).
+
+ByteArrayInputStream and ByteArrayOutputStream
+These streams treat an array of bytes as a stream of bytes.
+
+
+4. Buffered Streams
+Buffered streams improve I/O performance by reducing the number of I/O operations through buffering.
+
+BufferedInputStream and BufferedOutputStream
+These are byte streams that add buffering to the underlying input and output streams.
+
+BufferedReader and BufferedWriter
+These are character streams that add buffering to the underlying reader and writer.
+
+
+
+
+
